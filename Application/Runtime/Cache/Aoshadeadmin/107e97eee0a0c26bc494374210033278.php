@@ -1,0 +1,202 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="renderer" content="webkit">
+    <title>网站信息</title>  
+    <link rel="stylesheet" type="text/css" href="<?php echo C('__PUBLICCSSADMIN__');?>/pintuer.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo C('__PUBLICCSSADMIN__');?>/admin.css" />
+    <script type="text/javascript" src="<?php echo C('__PUBLICJS__');?>/jquery.js"></script>   
+    <script type="text/javascript" src="<?php echo C('__PUBLICJSADMIN__');?>/pintuer.js"></script>
+    <script type="text/javascript" src="<?php echo C('__PUBLICJSADMIN__');?>/Index/info.js"></script>
+</head>
+<body>
+<div class="panel admin-panel">
+  <div class="panel-head"><strong><span class="icon-pencil-square-o"></span> 网站信息</strong></div>
+  <div class="body-content">
+    <div class="form-x">
+      <div class="form-group">
+        <div class="label">
+          <label>网站标题：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input stitle" name="stitle" value="<?php echo ($info["webTitle"]); ?>" />
+          <div class="tips"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label>网站LOGO：</label>
+        </div>
+        <div class="field">
+          <input type="text" id="url1" name="slogo" class="input tips" style="width:25%; float:left;" value="" data-toggle="hover" data-place="right" data-image=""  />
+          <input type="button" class="button bg-blue margin-left" id="image1" value="+ 浏览上传" >
+        </div>
+      </div>
+      <!--div class="form-group">
+        <div class="label">
+          <label>网站域名：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input" name="surl" value="" />
+        </div>
+      </div>
+      <div class="form-group" style="display:none">
+        <div class="label">
+          <label>副加标题：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input" name="sentitle" value="" />
+          <div class="tips"></div>
+        </div>
+      </div-->
+      <div class="form-group">
+        <div class="label">
+          <label>网站关键字：</label>
+        </div>
+        <div class="field">
+          <textarea class="input skeywords" name="skeywords" style="height:80px"><?php echo ($info["webKeywords"]); ?></textarea>
+          <div class="tips"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label>网站描述：</label>
+        </div>
+        <div class="field">
+          <textarea class="input sdescription" name="sdescription"><?php echo ($info["webDescription"]); ?></textarea>
+          <div class="tips"></div>
+        </div>
+      </div>
+      <!--div class="form-group">
+        <div class="label">
+          <label>联系人：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input" name="s_name" value="" />
+          <div class="tips"></div>
+        </div>
+      </div-->
+      <!--div class="form-group">
+        <div class="label">
+          <label>手机：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input" name="s_phone" value="" />
+          <div class="tips"></div>
+        </div>
+      </div-->
+      <div class="form-group">
+        <div class="label">
+          <label>电话：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input s_tel" name="s_tel" value="<?php echo ($info["webDescphone"]); ?>" />
+          <div class="tips"></div>
+        </div>
+      </div>
+      <!--div class="form-group" style="display:none;">
+        <div class="label">
+          <label>400电话：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input" name="s_400" value="" />
+          <div class="tips"></div>
+        </div>
+      </div-->
+      <div class="form-group">
+        <div class="label">
+          <label>传真：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input s_fax" name="s_fax" value="<?php echo ($info["webFax"]); ?>" />
+          <div class="tips"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label>QQ：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input s_qq" name="s_qq" value="<?php echo ($info["webQQ"]); ?>" />
+          <div class="tips"></div>
+        </div>
+      </div>
+      <!--div class="form-group" style="display:none">
+        <div class="label">
+          <label>QQ群：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input" name="s_qqu" value="" />
+          <div class="tips"></div>
+        </div>
+      </div-->
+     
+      <div class="form-group">
+        <div class="label">
+          <label>Email：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input s_email" name="s_email" value="<?php echo ($info["webEmail"]); ?>" />
+          <div class="tips"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label>地址（区）：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input s_area" name="s_area" value="<?php echo ($info["webCompanyarea"]); ?>" />
+          <div class="tips"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label>详细地址：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input s_addr" name="s_addr" value="<?php echo ($info["webCompanyaddr"]); ?>" />
+          <div class="tips"></div>
+        </div>
+      </div>  
+      <div class="form-group">
+        <div class="label">
+          <label>底部文字：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input s_comtainer" name="s_comtainer" value="<?php echo ($info["webContainer"]); ?>" />
+          <div class="tips"></div>
+        </div>
+      </div>  
+      <div class="form-group">
+        <div class="label">
+          <label>备案号：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input s_beian" name="s_beian" value="<?php echo ($info["webBeian"]); ?>" />
+          <div class="tips"></div>
+        </div>
+      </div>   
+      <!--div class="form-group">
+        <div class="label">
+          <label>底部信息：</label>
+        </div>
+        <div class="field">
+          <textarea name="scopyright" class="input" style="height:120px;"></textarea>
+          <div class="tips"></div>
+        </div>
+      </div-->
+      <div class="form-group">
+        <div class="label">
+          <label></label>
+        </div>
+        <div class="field">
+          <button id="infoBtn" class="button bg-main" type="submit"> 提交</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body></html>

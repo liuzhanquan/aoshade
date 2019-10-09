@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://www.sdzs.com/?m=news -->
+<html><head lang="zh-CN"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="__PUBLIC__/Css/Home/Index/animate.min.css"							/>
+<link rel="stylesheet" href="__PUBLIC__/Css/Home/Index/normalize.css"							/>
+<link rel="stylesheet" href="__PUBLIC__/Css/Home/Index/public.css"								/>
+<link rel="stylesheet" href="__PUBLIC__/Css/Home/Index/layer.css" id="layui_layer_skinlayercss"	/>
+<include file="header" />
+
+<div class="main">
+	<div class="container">
+		<div class="crumb"><a href="/">奥莎德首页</a>&nbsp;&gt;&nbsp;<span><a href="{:U('Index/news')}">新闻动态</a></span></div>
+	</div>
+	<div class="service-banner news-banner">
+		<header class="title white-title">
+			<!--h3>新闻中心</h3>
+			<p>NEWS CENTER</p-->
+		</header>
+	</div>
+	<div class="container">
+		<div class="news-pic-list">
+			<ul class="list">
+				<foreach name='result["content"]' item='item'>
+					<li>
+						<a href="{:U('Index/newsDetail')}/newsId/{$item.newsId}" class="clearfix">
+							<div class="pic pull-left"><img src="__PUBLIC__/News/{$item.newsId}/1.jpg"></div>
+							<h3>{$item.newsTitle}</h3>
+							<h4>{$item.newsRelease} 作者：{$item.newsName}  {$item.newsTimes}人浏览</h4>
+							<p>{$item.newsInfo|mb_substr=0,100,'utf-8'}...</p>
+							<ins></ins>
+						</a>
+					</li>
+				</foreach>
+				<!--li>
+					<a href="{:U('Index/newsDetail')}" class="clearfix">
+						<div class="pic pull-left"><img src="__PUBLIC__/Img/Home/1490841629863530.png"></div>
+						<h3>客至｜温州材料商领导莅临圣都参观交流，共赢发展</h3>
+						<h4>2017-03-30 来源：圣都装饰  30人浏览</h4>
+						<p>有客从外来，闻之常欢喜。3月28日下午，圣都集团海外海精装体验城再逢贵客，喜迎浙江省温州市的材料商领导一行前来参观交流，共同商讨合...</p>
+						<ins></ins>
+					</a>
+				</li>
+				<li>
+					<a href="{:U('Index/newsDetail')}" class="clearfix">
+						<div class="pic pull-left"><img src="__PUBLIC__/Img/Home/1490841629863530.png"></div>
+						<h3>客至｜温州材料商领导莅临圣都参观交流，共赢发展</h3>
+						<h4>2017-03-30 来源：圣都装饰  30人浏览</h4>
+						<p>有客从外来，闻之常欢喜。3月28日下午，圣都集团海外海精装体验城再逢贵客，喜迎浙江省温州市的材料商领导一行前来参观交流，共同商讨合...</p>
+						<ins></ins>
+					</a>
+				</li-->
+				
+								
+								
+			</ul>
+		</div>
+		<div class="pagenav">
+						{$result.page}
+					</div>
+	</div>
+</div>
+
+<include file="footer" />
+
+<script src="__PUBLIC__/Js/Home/Index/jquery.min.js"></script>
+<script src="__PUBLIC__/Js/Home/Index/base.js"></script>
+<script src="__PUBLIC__/Js/Home/Index/layer.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Js/Home/Index/layer_dialog.js"></script>
+<script> 
+var WEB_DIR = '/' 
+  function AddFavorite(sURL, sTitle) {
+      sURL = encodeURI(sURL);
+      try {
+        window.external.addFavorite(sURL, sTitle);
+      } catch (e) {
+        try {
+          window.sidebar.addPanel(sTitle, sURL, "");
+        } catch (e) {
+          liuAlert("加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
+        }
+      }
+    }
+</script><script>
+	$(function(){
+		$(".job-detail-list li .btn").click(function(){
+			$(this).hide().parent().siblings(".desc").show();
+		});
+	});
+</script>
+
+</body></html>

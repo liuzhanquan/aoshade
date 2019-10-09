@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://www.sdzs.com/?m=case -->
+<html><head lang="zh-CN"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="__PUBLIC__/Css/Home/Index/animate.min.css"							/>
+<link rel="stylesheet" href="__PUBLIC__/Css/Home/Index/normalize.css"							/>
+<link rel="stylesheet" href="__PUBLIC__/Css/Home/Index/index.css" 								/>
+<link rel="stylesheet" href="__PUBLIC__/Css/Home/Index/public.css" 								/>
+<link rel="stylesheet" href="__PUBLIC__/Css/Home/Index/layer.css" id="layui_layer_skinlayercss"	/>
+<include file="header" />
+<style>
+	.designer-list ul{margin-right:-10px;}
+	.designer-list li{float:left; width:288px; margin:0 10px 60px 0; border:1px solid #ccc;}
+		.designer-list li .pic{display:block;overflow: hidden;height:201px}
+			.designer-list li .pic img{display:block; width:100%;-webkit-transition:all .4s; -moz-transition:all .4s; -ms-transition:all .4s; -o-transition:all .4s; transition:all .4s; -webkit-transform:scale(1);-moz-transform:scale(1); -ms-transform:scale(1); -o-transform:scale(1); transform:scale(1);overflow: hidden;}
+			.designer-list li a:hover .pic img{
+					-webkit-transform: scale(1.4);
+					-moz-transform: scale(1.4);
+					-ms-transform: scale(1.4);
+					-o-transform: scale(1.4);
+					transform: scale(1.4);}
+		.designer-list li .desc{padding:8px 16px 15px; border-top:1px solid #ccc;}
+			.designer-list li .desc h3{height:40px; line-height:40px; overflow:hidden; margin:0; font-size:20px; font-weight:normal;}
+				.designer-list li .desc h3 a{text-decoration:none;}
+				.designer-list li .desc h3 span{margin-left:8px; font-size:13px; color:#818181;}
+			.designer-list li .desc .btn{display:block; width:70px; height:26px; line-height:26px; overflow:hidden; font-size:13px; color:#fff; text-align:center; text-decoration:none; background-color:#E63C49;}
+			.designer-list li .desc p{overflow:hidden; margin:13px 0 0; font-size:13px;}
+			.case{background: #292a2e;}
+			.case .title{color:#FFF}
+			.video_div {position: fixed;background: #ccc;width: 480px;top: 50%;margin-top: -262px;}
+			.video_div p{float: right;padding-right: 10px;}
+			.video_div span{height: 40px;line-height: 40px;padding: 0px 30px;font-size: 20px;}
+			.video_div1{position: fixed;width: 20px;bottom: 0px;background: #ccc;color: #000;font-size: 20px;padding: 10px;top: 50%;height: 110px;}
+	</style>
+<div class="banner">
+	<div class="banner-slider">
+		
+	<div class="banner-viewport" style="overflow: hidden; position: relative;">
+		<ul class="slides list clearfix" style="width: 800%; transition-duration: 0s; transform: translate3d(-1903px, 0px, 0px);">
+			<li class="clone" aria-hidden="true" style="width: 1903px; float: left; display: block;"><a href="{:U('Index/caseAll')}" style="background-image: url(__PUBLIC__/Img/Home/1461143337.jpg); background-size: 100% 100%;"></a></li>
+			<li class="banner-active-slide" style="width: 1903px; float: left; display: block;"><a href="{:U('Index/caseAll')}" style="background-image: url(__PUBLIC__/Img/Home/1461137353.jpg);background-size: 100% 100%;"></a></li>
+			<li class="" style="width: 1903px; float: left; display: block;"><a href="{:U('Index/caseAll')}" style="background-image: url(__PUBLIC__/Img/Home/1461142915.jpg);background-size: 100% 100%;"></a></li>
+		</ul>
+	</div>
+				<ol class="banner-control-nav banner-control-paging"><!--li><a class="banner-active">1</a></li><li><a class="">2</a></li></ol--></div>
+</div>
+<div class="search">
+	<div class="container clearfix">
+		<div class="search-title pull-left"><span>PRODUCT SEARCH</span>大家都在搜：
+							<foreach name="rel['caseType']" item="item">
+								<a href="{:U('Index/caseAll')}/sreach/{$item.casetypeText}">{$item.casetypeText}</a>
+							</foreach>
+							
+							<!--a href="{:U('Index/caseAll')}">铝制门窗</a>
+							<a href="{:U('Index/caseAll')}">医疗医药</a>
+							<a href="{:U('Index/caseAll')}">机器人</a-->
+					</div>
+		<span>
+		<div class="search-box pull-right">
+			<div class="select pull-left">
+				<span>案例</span>
+				<!--<ul class="list">
+					<li>案例</li>
+					<li>案例1</li>
+				</ul>-->
+			</div>
+			<input type="hidden">
+			<input type="text" class="txt pull-left sreachText" placeholder="请输入关键字" name="keyword">
+			<button type="submit" class="btn pull-left sreachSubmit" lin="{:U('Index/caseAll')}">搜索</button>
+		</div>
+		</span>
+	</div>
+</div>
+<div class="main">
+	<div class="container">
+		<div class="crumb"><a href="/">奥莎德首页</a>&nbsp;&gt;&nbsp;<span><a href="{:U('Index/caseAll')}">成功案例</a></span></div>
+		<div class="case-sort">
+			<div class="sort-list clearfix" id="xl" num="{$getU['caseArea']}">
+				<h3 class="pull-left">城市</h3>
+				<ul class="list clearfix">
+					<li class="active" cval="0">
+						<a href="{:U('Index/caseAll',array('caseType'=>$getU['caseType'],'caseSize'=>$getU['caseSize']))}">全部</a>
+					</li>
+					<foreach name="case['caseArea']" item="item" >
+						<li class="" cval="0">
+						<a href="{:U('Index/caseAll',array('caseArea'=>$item['caseareaId'],'caseType'=>$getU['caseType'],'caseSize'=>$getU['caseSize']))}">{$item.caseareaText}</a>
+					</li>
+					</foreach>
+					<!--li class="active" cval="0">
+						<a href="{:U('Index/caseAll',array('caseType'=>0,'caseSize'=>0))}">全部</a>
+					</li-->
+
+				</ul>
+			</div>
+			<div class="sort-list clearfix" id="fg" num="{$getU['caseType']}">
+				<h3 class="pull-left">类型</h3>
+				<ul class="list clearfix">
+					<!--li class="active" cval="0" href="javascript:;"><a>全部</a></li-->
+						<li class="active" cval="0">
+							<a href="{:U('Index/caseAll',array('caseArea'=>$getU['caseArea'],'caseSize'=>$getU['caseSize']))}">全部</a>
+						</li>
+						<foreach name="case['caseType']" item="item" >
+							<li class="" cval="0">
+							<a href="{:U('Index/caseAll',array('caseArea'=>$getU['caseArea'],'caseType'=>$item['casetypeId'],'caseSize'=>$getU['caseSize']))}">{$item.casetypeText}</a>
+						</li>
+						</foreach>
+				</ul>
+			</div>
+			<div class="sort-list clearfix" id="mj" num="{$getU['caseSize']}">
+				<h3 class="pull-left">面积</h3>
+				<ul class="list clearfix">
+					<li class="active" cval="0">
+						<a href="{:U('Index/caseAll',array('caseArea'=>$getU['caseArea'],'caseType'=>$getU['caseType']))}">全部</a>
+					</li>
+					<foreach name="case['caseSize']" item="item">
+						<li cval="60-90"><a href="{:U('Index/caseAll',array('caseArea'=>$getU['caseArea'],'caseType'=>$getU['caseType'],'caseSize'=>$item['casesizeId']))}">{$item.casesizeText}㎡</a></li>
+					</foreach>
+					
+				</ul>
+			</div>
+		</div>
+
+		<div class="case-list">
+			<ul class="list clearfix">
+				<foreach name="case['content']" item="item" >
+				<li>
+					<a href="{:U('Index/caseDetail')}/caseId/{$item.caseId}">
+						<!--div class="pic"><img src="__PUBLIC__/Img/Home/thumb (7).jpg"></div-->
+						<div class="pic"><img src="__PUBLIC__/Case/{$item.caseId}/1.jpg"></div>
+						<div class="desc clearfix">
+							<div class="hd pull-right">
+								<!--img src="__PUBLIC__/Img/Home/thumb_1484290085110867.jpg" class="pull-left"-->
+							</div>
+							<h3>{$item.caseTitle}</h3>
+							<dl class="clearfix">
+								<dd>{$item.caseCompany}</dd>
+								<dd>　　　{$item.caseSizeNum}㎡</dd>
+							</dl>
+						</div>
+					</a>
+				</li>
+				</foreach>
+				
+			</ul>
+		</div>
+		<!--div class="pagenav">
+			 <a class="btn">1</a> <a href="{:U('Index/caseAll')}"></a> <a href="{:U('Index/caseAll')}"></a> <a href="{:U('Index/caseAll')}"></a> <a class="btn go" href="{:U('Index/caseAll')}">下一页</a>
+		</div-->
+		<div class="pagenav">
+			 {$case.page}
+		</div>
+	</div>
+</div>
+
+
+<include file="Index/footer" />
+
+
+<script src="__PUBLIC__/Js/Home/Index/hm.js"></script>
+<script src="__PUBLIC__/Js/Home/Index/hm(1).js"></script>
+<script src="__PUBLIC__/Js/Home/Index/jquery.min.js"></script>
+<script src="__PUBLIC__/Js/Home/Index/base.js"></script>
+<script src="__PUBLIC__/Js/Home/Index/layer.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Js/Home/Index/layer_dialog.js"></script>
+<script> 
+var WEB_DIR = '/' 
+  function AddFavorite(sURL, sTitle) {
+      sURL = encodeURI(sURL);
+      try {
+        window.external.addFavorite(sURL, sTitle);
+      } catch (e) {
+        try {
+          window.sidebar.addPanel(sTitle, sURL, "");
+        } catch (e) {
+          liuAlert("加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
+        }
+      }
+    }
+</script>
+<script src="__PUBLIC__/Js/Home/Index/jquery.flexslider.min.js"></script>
+<script src="__PUBLIC__/Js/Home/Index/wow.min.js"></script>
+<script src="__PUBLIC__/Js/Home/Index/layer.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Js/Home/Index/layer_dialog.js"></script>
+<script src="__PUBLIC__/Js/Home/Index/objURL.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	new WOW().init();
+	$(function(){
+		$(".banner-slider").flexslider({namespace:"banner-",animation:"slide",directionNav:false});
+		$(".hardcover-slider li").hover(function(){
+			var index = $(this).index();
+			$(this).addClass("active").siblings("li").removeClass("active");
+			$(".hardcover-slider .pic a").eq(index).fadeIn(200).siblings().hide();
+		});
+		$(".team-slider").flexslider({namespace:"team-",controlNav:false,prevText:"<",nextText:">"});
+
+		/*function checkSt(){
+			if($(window).scrollTop() >= $(".advantage").offset().top - $(window).height()/2){
+				$(".advantage .list").addClass("active");
+			}
+			console.log($(window).scrollTop(),$(".advantage").offset().top);
+		}
+		$(window).scroll(function(){
+			checkSt();
+		});
+		window.onload = function(){
+			checkSt();
+		}
+		*/
+	});
+</script>
+<script>
+
+
+	/*var ajaxData = new Object();
+	$(function(){	
+	var myurl=new objURL();
+	$(document).on('click','#xl li',function(){
+		ajaxData.page = 1;
+		ajaxData.lx_id = $(this).attr('cval');
+		if(ajaxData.lx_id){
+			var val= ajaxData.lx_id;
+		}else{
+			var val=myurl.get('xl');
+		}
+		var val1=myurl.get('fg');
+		var val2=myurl.get('mj');
+		var val3=myurl.get('hx');
+		myurl.set("xl",val); 
+		$(this).addClass('active').siblings().removeClass('active');
+		location.href=myurl.url();
+	});
+	$(document).on('click','#fg li',function(){
+		ajaxData.page = 1;
+		ajaxData.fg_id = $(this).attr('cval');
+		if(ajaxData.fg_id){
+			var val1= ajaxData.fg_id;
+		}else{
+			var val1=myurl.get('fg');
+		}
+		var val=myurl.get('xl');
+		var val2=myurl.get('mj');
+		var val3=myurl.get('hx');
+		//myurl.set("area_id",val); // 新增/修改 一个arg参数的值为data
+		myurl.set("fg",val1);
+		//myurl.set("layout_id",val2);
+		var name = $(this).html();
+		$(this).addClass('active').siblings().removeClass('active');
+		location.href=myurl.url();
+	});
+	$(document).on('click','#mj li',function(){
+		ajaxData.mj_id = $(this).attr('cval');
+		if(ajaxData.mj_id){
+			var val2= ajaxData.mj_id;
+		}else{
+			var val2=myurl.get('mj');
+		}
+		var val=myurl.get('xl');
+		var val1=myurl.get('fg');
+		var val3=myurl.get('hx');
+		myurl.set("mj",val2);
+		location.href=myurl.url();
+	});
+	$(document).on('click','#hx li',function(){
+		ajaxData.page = 1;
+		ajaxData.hx_id = $(this).attr('cval');
+		if(ajaxData.hx_id){
+				var val3= ajaxData.hx_id;
+			}else{
+			var val3=myurl.get('hx');
+		}
+		var val=myurl.get('xl');
+		var val1=myurl.get('fg');
+		var val2=myurl.get('mj');
+		myurl.set("hx",val3);
+		location.href=myurl.url();
+	});
+	});
+	*/
+
+	var xl = $('#xl').attr('num');
+	if( xl ){
+		$('#xl li').attr('class','');
+		$('#xl li').eq(xl).attr('class','active');
+	}
+
+	var fg = $('#fg').attr('num');
+	if( fg ){
+		$('#fg li').attr('class','');
+		$('#fg li').eq(fg).attr('class','active');
+	}
+
+	var mj = $('#mj').attr('num');
+	if( mj ){
+		$('#mj li').attr('class','');
+		$('#mj li').eq(mj).attr('class','active');
+	}
+
+
+	</script>
+</body></html>

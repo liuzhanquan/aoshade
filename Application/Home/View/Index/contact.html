@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://www.sdzs.com/?m=contact -->
+<html><head lang="zh-CN"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="__PUBLIC__/Css/Home/Index/animate.min.css"							/>
+<link rel="stylesheet" href="__PUBLIC__/Css/Home/Index/normalize.css"							/>
+<link rel="stylesheet" href="__PUBLIC__/Css/Home/Index/public.css"								/>
+<link rel="stylesheet" href="__PUBLIC__/Css/Home/Index/layer.css" id="layui_layer_skinlayercss"	/>
+<include file="header" />
+
+<div class="main">
+	<div class="container">
+		<div class="crumb"><a href="/">奥莎德首页</a>&nbsp;&gt;&nbsp;<span><a href="{:U('Index/contact')}">联系我们</a></span></div>
+	</div>
+	<div class="service-banner job-banner">
+		<header class="title white-title">
+			<!--h3>联系我们</h3>
+			<p>RECRUITMENT</p-->
+		</header>
+	</div>
+	<div class="container">
+		<div class="contact">
+			
+			<header class="about-title">
+				<h3>这里是我们的一些联系方式，您有任何问题<br>欢迎咨询</h3>
+				<p>Here are some of our contact information you have any questions, please consult</p>
+			</header>
+			<div class="profile-info contact-info clearfix" style="float: left;margin: 55px 0 35px;background-color: #F2F2F2;">
+				<div class="pic pull-left" style="display: block;width: 652px;height: 287px;overflow: hidden;">
+					<iframe src="{:U('Index/map')}" frameborder="0" scrolling="no" style="display: block;width: 652px;height: 287px;overflow: hidden;"></iframe>
+				</div>
+				<div class="desc pull-right">
+					<h4>客户服务 <span>CUSTOMER SERVICE</span></h4>
+					<p>24小时全国服务热线：020-38981622</p><p>客户服务邮箱：osdexpo@163.com</p><p>总部地址：广州市天河区珠江新城花城大道3号南天广场皇朝阁2004F</p>				</div>
+			</div>
+			
+			<div class="contact-detail-list">
+				<table width="100%">
+					<tbody><tr>
+						<td width="228"><img src="__PUBLIC__/Img/Home/contact04.png"></td>
+						<td>
+							<p>合作申请：020-38981622</p><p>电子商务咨询：osdexpo@163.com</p>						</td>
+					</tr>
+					<tr>
+						<td><img src="__PUBLIC__/Img/Home/contact05.png"></td>
+						<td>
+							<p>人才招募，就业合作：osdexpo@163.com</p>						</td>
+					</tr>
+					<tr>
+						<td><img src="__PUBLIC__/Img/Home/contact06.png"></td>
+						<td>
+							<p>北京工厂：北京市朝阳区马各庄村南工业区A19</p>						</td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+	</div>
+</div>
+
+<include file="footer" />
+
+<script src="__PUBLIC__/Js/Home/Index/jquery.min.js"></script>
+<script src="__PUBLIC__/Js/Home/Index/base.js"></script>
+<script src="__PUBLIC__/Js/Home/Index/layer.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Js/Home/Index/layer_dialog.js"></script>
+<script> 
+var WEB_DIR = '/' 
+  function AddFavorite(sURL, sTitle) {
+      sURL = encodeURI(sURL);
+      try {
+        window.external.addFavorite(sURL, sTitle);
+      } catch (e) {
+        try {
+          window.sidebar.addPanel(sTitle, sURL, "");
+        } catch (e) {
+          liuAlert("加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
+        }
+      }
+    }
+</script><script>
+	$(function(){
+		$(".job-detail-list li .btn").click(function(){
+			$(this).hide().parent().siblings(".desc").show();
+		});
+	});
+</script>
+
+
+</body></html>

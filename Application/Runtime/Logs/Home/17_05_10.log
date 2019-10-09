@@ -1,0 +1,534 @@
+[ 2017-05-10T03:12:10+08:00 ] 123.125.45.10 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `asd_case` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `asd_case` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `asd_casetype` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `asd_news` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_case` WHERE ( caseRecentshow = 1 and life = 0 ) LIMIT 9   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_casetype` WHERE ( caseTypeShow = 1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 4 and  newsShow = 0 and life = 0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 4 and  newsShow = 0 and life = 0 ) LIMIT 1,5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 2 and  newsShow = 0 and life = 0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 2 and  newsShow = 0 and life = 0 ) LIMIT 1,5   [ RunTime:0.0156s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 3 and  newsShow = 0 and life = 0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 3 and  newsShow = 0 and life = 0 ) LIMIT 1,5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `asd_webinfo` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `asd_webinfo` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_webinfo` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `asd_news` [ RunTime:0.0000s ]
+SQL: SELECT `newsId`,`newsTitle`,`newsRelease`,`newsInfo` FROM `asd_news` WHERE ( newsType = 1 and life = 0 ) LIMIT 2   [ RunTime:0.0000s ]
+SQL: SELECT `newsId`,`newsTitle`,`newsRelease`,`newsInfo` FROM `asd_news` WHERE ( newsType = 2 and life = 0 ) LIMIT 2   [ RunTime:0.0000s ]
+SQL: SELECT `newsId`,`newsTitle`,`newsRelease`,`newsInfo` FROM `asd_news` WHERE ( newsType = 3 and life = 0 ) LIMIT 2   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: webCompnayarea C:\Tool\phpStudy\WWW\aoshade\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 763 行.
+NOTIC: [8] Undefined index: webCompnayaddr C:\Tool\phpStudy\WWW\aoshade\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 763 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-10T07:41:43+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T07:41:46+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `asd_case` [ RunTime:0.0370s ]
+SQL: SHOW COLUMNS FROM `asd_case` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `asd_casetype` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `asd_news` [ RunTime:0.0570s ]
+SQL: SELECT * FROM `asd_case` WHERE ( caseRecentshow = 1 and life = 0 ) LIMIT 9   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `asd_casetype` WHERE ( caseTypeShow = 1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 4 and  newsShow = 0 and life = 0 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 4 and  newsShow = 0 and life = 0 ) LIMIT 1,5   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 2 and  newsShow = 0 and life = 0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 2 and  newsShow = 0 and life = 0 ) LIMIT 1,5   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 3 and  newsShow = 0 and life = 0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 3 and  newsShow = 0 and life = 0 ) LIMIT 1,5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `asd_webinfo` [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `asd_webinfo` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `asd_webinfo` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `asd_news` [ RunTime:0.0070s ]
+SQL: SELECT `newsId`,`newsTitle`,`newsRelease`,`newsInfo` FROM `asd_news` WHERE ( newsType = 1 and life = 0 ) LIMIT 2   [ RunTime:0.0000s ]
+SQL: SELECT `newsId`,`newsTitle`,`newsRelease`,`newsInfo` FROM `asd_news` WHERE ( newsType = 2 and life = 0 ) LIMIT 2   [ RunTime:0.0000s ]
+SQL: SELECT `newsId`,`newsTitle`,`newsRelease`,`newsInfo` FROM `asd_news` WHERE ( newsType = 3 and life = 0 ) LIMIT 2   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: webCompnayarea D:\phpStudy\WWW\asd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 763 行.
+NOTIC: [8] Undefined index: webCompnayaddr D:\phpStudy\WWW\asd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 763 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T07:41:48+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-10T07:42:06+08:00 ] 127.0.0.1 /Public/Css/images/bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T07:53:23+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T07:53:24+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `asd_case` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `asd_case` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `asd_casetype` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `asd_news` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `asd_case` WHERE ( caseRecentshow = 1 and life = 0 ) LIMIT 9   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_casetype` WHERE ( caseTypeShow = 1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 4 and  newsShow = 0 and life = 0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 4 and  newsShow = 0 and life = 0 ) LIMIT 1,5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 2 and  newsShow = 0 and life = 0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 2 and  newsShow = 0 and life = 0 ) LIMIT 1,5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 3 and  newsShow = 0 and life = 0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 3 and  newsShow = 0 and life = 0 ) LIMIT 1,5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `asd_webinfo` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `asd_webinfo` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `asd_webinfo` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `asd_news` [ RunTime:0.0040s ]
+SQL: SELECT `newsId`,`newsTitle`,`newsRelease`,`newsInfo` FROM `asd_news` WHERE ( newsType = 1 and life = 0 ) LIMIT 2   [ RunTime:0.0010s ]
+SQL: SELECT `newsId`,`newsTitle`,`newsRelease`,`newsInfo` FROM `asd_news` WHERE ( newsType = 2 and life = 0 ) LIMIT 2   [ RunTime:0.0000s ]
+SQL: SELECT `newsId`,`newsTitle`,`newsRelease`,`newsInfo` FROM `asd_news` WHERE ( newsType = 3 and life = 0 ) LIMIT 2   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: webCompnayarea D:\phpStudy\WWW\asd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 763 行.
+NOTIC: [8] Undefined index: webCompnayaddr D:\phpStudy\WWW\asd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 763 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T07:53:24+08:00 ] 127.0.0.1 HTTP://www.asd.com/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `asd_case` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `asd_case` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `asd_casetype` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `asd_news` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `asd_case` WHERE ( caseRecentshow = 1 and life = 0 ) LIMIT 9   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_casetype` WHERE ( caseTypeShow = 1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 4 and  newsShow = 0 and life = 0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 4 and  newsShow = 0 and life = 0 ) LIMIT 1,5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 2 and  newsShow = 0 and life = 0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 2 and  newsShow = 0 and life = 0 ) LIMIT 1,5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 3 and  newsShow = 0 and life = 0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 3 and  newsShow = 0 and life = 0 ) LIMIT 1,5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `asd_webinfo` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `asd_webinfo` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `asd_webinfo` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `asd_news` [ RunTime:0.0040s ]
+SQL: SELECT `newsId`,`newsTitle`,`newsRelease`,`newsInfo` FROM `asd_news` WHERE ( newsType = 1 and life = 0 ) LIMIT 2   [ RunTime:0.0010s ]
+SQL: SELECT `newsId`,`newsTitle`,`newsRelease`,`newsInfo` FROM `asd_news` WHERE ( newsType = 2 and life = 0 ) LIMIT 2   [ RunTime:0.0000s ]
+SQL: SELECT `newsId`,`newsTitle`,`newsRelease`,`newsInfo` FROM `asd_news` WHERE ( newsType = 3 and life = 0 ) LIMIT 2   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: webCompnayarea D:\phpStudy\WWW\asd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 763 行.
+NOTIC: [8] Undefined index: webCompnayaddr D:\phpStudy\WWW\asd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 763 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T07:53:25+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `asd_case` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `asd_case` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `asd_casetype` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `asd_news` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `asd_case` WHERE ( caseRecentshow = 1 and life = 0 ) LIMIT 9   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_casetype` WHERE ( caseTypeShow = 1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 4 and  newsShow = 0 and life = 0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 4 and  newsShow = 0 and life = 0 ) LIMIT 1,5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 2 and  newsShow = 0 and life = 0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 2 and  newsShow = 0 and life = 0 ) LIMIT 1,5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 3 and  newsShow = 0 and life = 0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 3 and  newsShow = 0 and life = 0 ) LIMIT 1,5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `asd_webinfo` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `asd_webinfo` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `asd_webinfo` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `asd_news` [ RunTime:0.0030s ]
+SQL: SELECT `newsId`,`newsTitle`,`newsRelease`,`newsInfo` FROM `asd_news` WHERE ( newsType = 1 and life = 0 ) LIMIT 2   [ RunTime:0.0000s ]
+SQL: SELECT `newsId`,`newsTitle`,`newsRelease`,`newsInfo` FROM `asd_news` WHERE ( newsType = 2 and life = 0 ) LIMIT 2   [ RunTime:0.0000s ]
+SQL: SELECT `newsId`,`newsTitle`,`newsRelease`,`newsInfo` FROM `asd_news` WHERE ( newsType = 3 and life = 0 ) LIMIT 2   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: webCompnayarea D:\phpStudy\WWW\asd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 763 行.
+NOTIC: [8] Undefined index: webCompnayaddr D:\phpStudy\WWW\asd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 763 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T07:53:29+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `asd_case` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `asd_case` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `asd_casetype` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `asd_news` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `asd_case` WHERE ( caseRecentshow = 1 and life = 0 ) LIMIT 9   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `asd_casetype` WHERE ( caseTypeShow = 1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 4 and  newsShow = 0 and life = 0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 4 and  newsShow = 0 and life = 0 ) LIMIT 1,5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 2 and  newsShow = 0 and life = 0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 2 and  newsShow = 0 and life = 0 ) LIMIT 1,5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 3 and  newsShow = 0 and life = 0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `asd_news` WHERE ( newsType = 3 and  newsShow = 0 and life = 0 ) LIMIT 1,5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `asd_webinfo` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `asd_webinfo` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `asd_webinfo` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `asd_news` [ RunTime:0.0040s ]
+SQL: SELECT `newsId`,`newsTitle`,`newsRelease`,`newsInfo` FROM `asd_news` WHERE ( newsType = 1 and life = 0 ) LIMIT 2   [ RunTime:0.0010s ]
+SQL: SELECT `newsId`,`newsTitle`,`newsRelease`,`newsInfo` FROM `asd_news` WHERE ( newsType = 2 and life = 0 ) LIMIT 2   [ RunTime:0.0000s ]
+SQL: SELECT `newsId`,`newsTitle`,`newsRelease`,`newsInfo` FROM `asd_news` WHERE ( newsType = 3 and life = 0 ) LIMIT 2   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: webCompnayarea D:\phpStudy\WWW\asd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 763 行.
+NOTIC: [8] Undefined index: webCompnayaddr D:\phpStudy\WWW\asd\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 763 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T07:58:39+08:00 ] 127.0.0.1 /Public/Css/images/bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T07:59:15+08:00 ] 127.0.0.1 /phpmyadmin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Phpmyadmin
+
+[ 2017-05-10T07:59:35+08:00 ] 127.0.0.1 /aoshadephpmyadmin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Aoshadephpmyadmin
+
+[ 2017-05-10T08:05:28+08:00 ] 127.0.0.1 /Index/designer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `asd_webinfo` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `asd_webinfo` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `asd_webinfo` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `asd_news` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `asd_news` [ RunTime:0.0050s ]
+SQL: SELECT `newsId`,`newsTitle`,`newsRelease`,`newsInfo` FROM `asd_news` WHERE ( newsType = 1 and life = 0 ) LIMIT 2   [ RunTime:0.0000s ]
+SQL: SELECT `newsId`,`newsTitle`,`newsRelease`,`newsInfo` FROM `asd_news` WHERE ( newsType = 2 and life = 0 ) LIMIT 2   [ RunTime:0.0000s ]
+SQL: SELECT `newsId`,`newsTitle`,`newsRelease`,`newsInfo` FROM `asd_news` WHERE ( newsType = 3 and life = 0 ) LIMIT 2   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: webCompnayarea D:\phpStudy\WWW\asd\Application\Runtime\Cache\Home\b80ac81553007b0f18c475bb4f546667.php 第 267 行.
+NOTIC: [8] Undefined index: webCompnayaddr D:\phpStudy\WWW\asd\Application\Runtime\Cache\Home\b80ac81553007b0f18c475bb4f546667.php 第 267 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T08:05:32+08:00 ] 127.0.0.1 /Index/contact
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `asd_webinfo` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `asd_webinfo` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `asd_webinfo` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `asd_news` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `asd_news` [ RunTime:0.0040s ]
+SQL: SELECT `newsId`,`newsTitle`,`newsRelease`,`newsInfo` FROM `asd_news` WHERE ( newsType = 1 and life = 0 ) LIMIT 2   [ RunTime:0.0000s ]
+SQL: SELECT `newsId`,`newsTitle`,`newsRelease`,`newsInfo` FROM `asd_news` WHERE ( newsType = 2 and life = 0 ) LIMIT 2   [ RunTime:0.0010s ]
+SQL: SELECT `newsId`,`newsTitle`,`newsRelease`,`newsInfo` FROM `asd_news` WHERE ( newsType = 3 and life = 0 ) LIMIT 2   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: webCompnayarea D:\phpStudy\WWW\asd\Application\Runtime\Cache\Home\a873315f4d7930e02d8853d9439fbb36.php 第 200 行.
+NOTIC: [8] Undefined index: webCompnayaddr D:\phpStudy\WWW\asd\Application\Runtime\Cache\Home\a873315f4d7930e02d8853d9439fbb36.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T08:05:32+08:00 ] 127.0.0.1 /Index/map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T08:10:04+08:00 ] 127.0.0.1 /Public/Css/images/bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T08:10:04+08:00 ] 127.0.0.1 /Public/Css/images/bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T08:10:04+08:00 ] 127.0.0.1 /Public/Css/images/bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T08:10:04+08:00 ] 127.0.0.1 /Public/Css/images/bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T08:10:32+08:00 ] 127.0.0.1 /Public/Css/images/bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-10T08:11:05+08:00 ] 127.0.0.1 /Public/Css/images/bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T08:11:07+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T08:11:09+08:00 ] 127.0.0.1 /Public/Css/images/bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T08:11:10+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T08:13:41+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T08:15:41+08:00 ] 127.0.0.1 /Index/contact
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `asd_webinfo` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `asd_webinfo` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `asd_webinfo` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `asd_news` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `asd_news` [ RunTime:0.0040s ]
+SQL: SELECT `newsId`,`newsTitle`,`newsRelease`,`newsInfo` FROM `asd_news` WHERE ( newsType = 1 and life = 0 ) LIMIT 2   [ RunTime:0.0000s ]
+SQL: SELECT `newsId`,`newsTitle`,`newsRelease`,`newsInfo` FROM `asd_news` WHERE ( newsType = 2 and life = 0 ) LIMIT 2   [ RunTime:0.0010s ]
+SQL: SELECT `newsId`,`newsTitle`,`newsRelease`,`newsInfo` FROM `asd_news` WHERE ( newsType = 3 and life = 0 ) LIMIT 2   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: webCompnayarea D:\phpStudy\WWW\asd\Application\Runtime\Cache\Home\a873315f4d7930e02d8853d9439fbb36.php 第 200 行.
+NOTIC: [8] Undefined index: webCompnayaddr D:\phpStudy\WWW\asd\Application\Runtime\Cache\Home\a873315f4d7930e02d8853d9439fbb36.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T08:15:41+08:00 ] 127.0.0.1 /Index/map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T08:17:28+08:00 ] 127.0.0.1 /Public/Css/images/bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-10T08:18:19+08:00 ] 127.0.0.1 /Public/Css/images/bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-10T08:18:21+08:00 ] 127.0.0.1 /Public/Css/images/bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-10T08:18:40+08:00 ] 127.0.0.1 /Public/Css/images/bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-10T08:18:41+08:00 ] 127.0.0.1 /Public/Css/images/bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T08:18:43+08:00 ] 127.0.0.1 /Public/Css/images/bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T08:18:47+08:00 ] 127.0.0.1 /Public/Css/images/bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T08:19:10+08:00 ] 127.0.0.1 /Public/Css/images/bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-10T08:19:29+08:00 ] 127.0.0.1 /Public/Css/images/bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T08:19:34+08:00 ] 127.0.0.1 /Public/Css/images/bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T08:20:04+08:00 ] 127.0.0.1 /Public/Css/images/bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-10T08:20:04+08:00 ] 127.0.0.1 /Public/Css/images/bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T08:20:04+08:00 ] 127.0.0.1 /Public/Css/images/bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+

@@ -1,0 +1,104 @@
+
+<footer class="footer" id="footer">
+	<!--div class="foot-top box">
+		<div class="container clearfix">
+			<div class="foot-news pull-left">
+				<div class="tabnav tab-btn clearfix" id="tabNav1">
+											<a href="javascript:void(0);" class="pull-left active">热点活动</a>
+											<a href="javascript:void(0);" class="pull-left ">行业新闻</a>
+											<a href="javascript:void(0);" class="pull-left ">促销新闻</a>
+									</div>
+				<div class="tabcont" id="tabCont1">
+											<div class="foot-news-list">
+							<ul class="list clearfix">
+										<foreach name="fNews['1']" item="item">
+											<li>
+												<h3><a href="{:U('Index/newsDetail')}/newsId/{$item.newsId}">{$item.newsTitle}</a></h3>
+												<p>{$item.newsInfo|mb_substr=0,50,"utf-8"}...</p>
+												<time>{$item.newsRelease}</time>
+											</li>
+										</foreach>
+															</ul>
+						</div>
+											<div class="foot-news-list" style="display: none;">
+							<ul class="list clearfix">
+									<foreach name="fNews['2']" item="item">
+											<li>
+												<h3><a href="{:U('Index/newsDetail')}/newsId/{$item.newsId}">{$item.newsTitle}</a></h3>
+												<p>{$item.newsInfo|mb_substr=0,50,"utf-8"}...</p>
+												<time>{$item.newsRelease}</time>
+											</li>
+										</foreach>
+															</ul>
+						</div>
+											<div class="foot-news-list" style="display: none;">
+							<ul class="list clearfix">
+										<foreach name="fNews['3']" item="item">
+											<li>
+												<h3><a href="{:U('Index/newsDetail')}/newsId/{$item.newsId}">{$item.newsTitle}</a></h3>
+												<p>{$item.newsInfo|mb_substr=0,50,"utf-8"}...</p>
+												<time>{$item.newsRelease}</time>
+											</li>
+										</foreach>
+															</ul>
+						</div>
+						
+				</div>
+			</div>
+		</div>
+	</div-->
+	
+	
+
+	<div class="foot-friend">
+		<div class="container">
+			友情链接 ：		</div>
+	</div>
+	<div class="foot-link box">
+		<div class="container clearfix">
+			<div class="" style="float:left;width:100px;height:200px;"></div>
+			<dl>
+				<dt>服务支持</dt>
+				<dd><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=704037154&site=qq&menu=yes">在线客服</a></dd>
+				<dd><a href="{:U('Index/contact')}">网站地图</a></dd>
+			</dl>
+			<dl>
+				<dt>关于我们</dt>
+				<dd><a href="{:U('Index/about')}">独家优势</a></dd>
+				<dd><a href="{:U('Index/designer')}">加入我们</a></dd>
+				<!--dd><a href="__PUBLIC__/Img/Home/浙江圣都家居装饰集团官方网站.html">法律声明</a></dd>
+				<dd><a href="__PUBLIC__/Img/Home/浙江圣都家居装饰集团官方网站.html">合作申请</a></dd-->
+			</dl>
+			<dl>
+				<dt>关注我们</dt>
+				<dd><a href="/">新浪微博</a></dd>
+				<dd><a href="/">QQ空间</a></dd>
+			</dl>
+			<div class="" style="float:left;width:150px;height:200px;"></div>
+			<dl class="c">
+				<dt>联系我们</dt>
+				<dd>
+					咨询热线
+					<h3>{$headInfo.webDescphone}</h3>
+					<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=704037154&site=qq&menu=yes" class="btn">在线咨询</a>
+				</dd>
+				<dd>{$headInfo.webCompanyname}</dd>
+				<dd style="line-height:20px;">{$headInfo.webCompnayarea}<br/>{$headInfo.webCompnayaddr}</dd>
+			</dl>
+			<!--dl>
+				<dt>官方微信</dt>
+				<dd><img src="__PUBLIC__/Img/Home/img09.jpg"></dd>
+			</dl-->
+		</div>
+	</div>
+	<div class="foot-desc">
+		<div class="container">
+			<span style="margin-left:150px;">{$headInfo.webContainer}<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010502002136" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="__PUBLIC__/Img/Home/ghs.png" style="float:left;"><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">{$headInfo.webBeian}</p></a></span>
+		</div>
+	</div>
+</footer>
+<!--div class="float-box">
+	<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=704037154&site=qq&menu=yes" class="btn f0">在线客服</a>
+	<a href="" class="btn f3" id="gotopBtn">返回顶部</a>
+</div-->
+

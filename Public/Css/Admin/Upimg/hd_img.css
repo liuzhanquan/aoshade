@@ -1,0 +1,90 @@
+.img_box1{
+	width:134px;
+	height:200px;
+}
+.img_box2{
+	width:199px;
+	height:149px;
+	position:relative;
+	overflow:hidden;
+}
+.img_box2 img{
+	width:199px;
+	height:149px;
+}
+.img_btn1{
+	width:199px;
+	height:50px;
+	font-size:18px;
+	line-height:50px;
+	border-top:1px solid #d2d2d2;
+	text-align:center;
+	cursor:pointer;
+}
+#word h2{
+	text-align:center;
+}
+.btn{
+	width:200px;
+	height:50px;
+	font-size:18px;
+	line-height:50px;
+	border-top:1px solid #d2d2d2;
+	text-align:center;
+	cursor:pointer;
+}
+.file_box{
+	width:200px;
+	height:50px;
+	cursor:pointer;
+	position:absolute;
+	left:0px;
+	top:149px;
+	z-index:20;
+	filter:alpha(opacity:10);
+	-webkit-opacity:0.1;
+	-khtml-opacity:0.1;
+	-moz-opacity:0.1;
+	opacity:0.1;
+}
+.file_inp1,
+.file_inp2,
+.word{
+	width:20px;
+	height:20px;
+	margin:-10px 0 0 -100px;
+	cursor:pointer;
+	filter:alpha(opacity:0);
+	-webkit-opacity:0;
+	-khtml-opacity:0;
+	-moz-opacity:0;
+	opacity:0;
+}
+.btn_img2,
+.btn_img3,
+.btn_word{
+	width:200px;
+	height:50px;
+	font-size:18px;
+	line-height:50px;
+	border-top:1px solid #d2d2d2;
+	text-align:center;
+	position:absolute;
+	top:149px;
+	background:#f8f8f8;
+	cursor:pointer;
+	z-index:1;
+}
+.del1,
+.del2,
+.del_words{
+	width:199px;
+	height:50px;
+	font-size:18px;
+	line-height:50px;
+	border-top:1px solid #d2d2d2;
+	text-align:center;
+	cursor:pointer;
+	display:block;
+	background:#f8f8f8;
+}
